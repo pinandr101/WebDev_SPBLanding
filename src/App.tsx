@@ -30,7 +30,7 @@ const App: React.FC = () => {
         <ul className={styles.topNav}>
           <li>
             <button onClick={toggleTheme} className={styles.themeToggle}>
-              <img src={darkThemeOn ? './public/ToLightTheme.png' : './public/ToDarkTheme.png'} alt="theme toggle" />
+              <img src={darkThemeOn ? '/ToLightTheme.png' : '/ToDarkTheme.png'} alt="theme toggle" />
             </button>
           </li>
           <li>

@@ -17,7 +17,7 @@ const Monuments: React.FC<MonumentsProps> = ({ monuments }) => {
         {monuments.map(m => (
           <div key={m.id} className={styles.item}>
             <h3>{m.name}</h3>
-            <img src={`./public/Monuments/${m.pictureName}`} alt={m.name} />
+            <img src={`/Monuments/${m.pictureName}`} alt={m.name} />
             <p>{m.description}</p>
             <span className={styles.year}>{m.year} год</span>
           </div>

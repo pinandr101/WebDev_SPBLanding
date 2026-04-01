@@ -56,7 +56,7 @@ const Places: React.FC<PlacesProps> = ({ places }) => {
         {sortedPlaces.map(place => (
           <div key={place.id} className={styles.placeCard}>
             <h3>{place.name}</h3>
-            <img src={`./public/Places/${place.pictureName}`} alt={place.name} />
+            <img src={`/Places/${place.pictureName}`} alt={place.name} />
             <p className={styles.address}>📍{place.address}</p>
             <p>{place.description}</p>
           </div>
