@@ -1,0 +1,83 @@
+.monuments {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s;
+}
+
+.monuments h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-left: 4px solid #2c7da0;
+  padding-left: 12px;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.item {
+  background-color: #f8fafc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+}
+
+.item h3 {
+  padding: 1rem 1rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+.item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.item p {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.year {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  padding: 0.2rem 0.8rem;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #1e293b;
+}
+
+.dark.monuments {
+  background-color: #1e293b;
+}
+
+.dark.monuments h2 {
+  border-left-color: #61a5c2;
+}
+
+.dark .item {
+  background-color: #2d3a4e;
+  color: #e2e8f0;
+}
+
+.dark .year {
+  background-color: #475569;
+  color: #e2e8f0;
+}
+
+@media (max-width: 480px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
